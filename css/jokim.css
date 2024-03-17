@@ -1,0 +1,309 @@
+ @charset "UTF-8"; 
+ @import url('https://fonts.googleapis.com/css?family=Overlock');
+ @font-face{
+    font-family: 'Overlock-Regular';
+    src: url('../../assets/fonts/Overlock/Overlock-Regular.ttf');
+ } 
+ @font-face{
+    font-family: 'Overlock-Bold', cursive;
+    src: url('../../assets/fonts/Overlock/Overlock-Bold.ttf');
+ }
+ @font-face{
+    font-family: 'Overlock-Black', cursive;
+    src: url('../../assets/fonts/Overlock/Overlock-Black.ttf');
+ }
+
+ @font-face{
+    font-family: 'Guitar';
+    src: url('../../assets/fonts/Guitar/ElectricGuitarIcons.ttf');
+ }
+
+.progress-bar .background, .progress-bar .rotate, 
+.progress-bar .left, .progress-bar .right, .profile, .right
+ {
+    background-color:#5e2f77;
+    color:#fff !important;
+}
+.entry .title:before{
+    border-color: #5e2f77;
+}
+.profile .heading, .right .heading {
+    color: #fff;
+}
+.heading, .designation h1, .timeline:before  {
+    color: #5e2f77;
+}
+.bar{
+    background-color: #000;
+}
+.bar .pro, .bar .edge{
+    background-color:#fff; 
+}
+ .clear { clear:both;}
+ h1,h2,h3,h4,h5,h6 {
+    padding: 0px;
+    margin: 0 0 5px 0 !important;
+}  
+body {
+    background: #f1f1f1;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Overlock-Regular';
+    font-size: 12px;
+    color:#444;
+}
+.page {
+    padding: 0px 15px;
+    margin: 0 auto;
+    background: #fff;
+}
+@page {
+size: A4;
+margin: 0 auto;
+} 
+@media print {
+    .page {
+        margin: 0 auto;
+        width: initial;
+        min-height: initial;
+        page-break-after: always;
+        border: none;
+    }
+}
+.profile, .right {    
+    color:#fff;
+}
+.mid-body >.left, .mid-body >.right {
+    padding: 20px;
+}
+.mid-body >.right {
+    padding-right: 0px;
+}
+.projects{
+    padding: 25px;
+}
+.projects .heading{
+    color:inherit;
+}
+.project-list{
+    padding: 10px 30px;
+}
+.project-list table tr td{
+    vertical-align: top;
+}
+.project-list h3{
+    border-bottom: 1px solid;
+    width:50%;
+}
+.section{
+    margin:0 0 15px 0;
+}
+.mid-body >.right .section{
+    padding-right: 20px;
+}
+.mid-body >.right .section.contact{
+    padding-right: 0px;
+}
+.mid-body >.right .section.contact .heading{
+    margin-right: 20px !important;
+}
+.heading {
+    font-size: 20px;
+    margin: 0 0 20px 0 !important;
+    border-bottom: 1px solid;
+}
+.sub-heading {
+    font-weight: normal;
+}
+.heading span.fa{
+    margin: 0 15px 0 0 !important;
+    font-size:35px;
+}
+.heading .icon {
+    padding: 0px 5px 0px 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+.avatar { padding: 0px;}
+.avatar .selfi {
+    position: relative;
+    width: 83%;
+    height: 94%;
+    border-radius: 22%; 
+    padding: 8px; 
+}
+.avatar .QR-code {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    right: 5px;
+    top: 5px;
+    display: none;
+}
+.profile{
+    padding: 15px 30px;
+}
+.profile .heading, .profile .quotes{
+    font-size: 35px;
+}
+.profile .heading{
+    margin: 0 0 30px 0 !important;
+    border: none;
+}
+.profile .quotes{
+    float: left;
+    margin: -20px 5px 0 0;
+    text-align:right;
+}
+.profile p{
+    text-align:left;
+}
+.designation h1{text-align:center;}
+.contact table tr, .social table tr {
+    border:none;
+}
+.contact table tr td, .social table tr td {
+    padding: 5px;
+    text-align: center
+}
+.contact table tr td:nth-child(2), .social table tr td:nth-child(2) {
+    text-align: left;
+}
+.contact table tr td.fa, .social table tr td.fa  {
+    font-size:20px; 
+    width:25px;
+}
+.social table tr td.fa  {
+    width:25px;
+    height:25px;
+    border-radius: 3px;
+}
+.bar {	
+	padding:0px;
+	width:100%;
+	height:1px;
+}
+.bar .pro {
+	float:left;	
+	height:1px;
+	animation: stretch 2s linear 0s  1;
+	-webkit-animation: stretch 2s linear 0s  1;
+	-moz-animation: stretch 2s linear 0s  1;
+	-o-animation: stretch 2s linear 0s  1;
+}
+.bar .edge {
+	width: 7px;
+    height: 7px;
+    float: left;
+    margin: -3px 0 0 -7px;
+    border-radius: 50%;
+}
+
+@keyframes stretch {
+  0% {
+	width:0%;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+.interest .icons , .skills .skills-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;   
+}
+.skills .skills-list li{
+    margin: 0px 5px 15px;
+    text-align: center;
+    width: 21%;
+    display: inline-block;
+}
+.section.language{
+    padding-right: 20px;
+}
+.interest .icons li {
+    font-size: 35px;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 7px 25px;
+}
+.interest .icons li div {
+    font-size:12px;
+    font-family: 'Overlock-Regular';
+    padding: 10px 0 0 0 ;
+}
+.interest .icons li.guitar {
+    font-family: "Guitar";
+    font-size : 55px;
+}
+.interest .icons li.guitar div {
+    margin: -15px 0 0 0;
+}
+.project-page>.heading{
+    margin: 0px !important;
+}
+.project h3 {
+    width:50%;
+    border-bottom: 1px solid;
+}
+.projects .project-list p {
+    text-align: justify;
+}
+
+@media (min-width :576px) {
+
+    .designation h1{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        padding: 0 0 15px 0;
+        font-size: 22px; 
+    }
+    .profile .heading, .profile .quotes{
+        font-size: 50px;
+    }
+    .profile .quotes{
+        width: 20%;
+        margin: -30px 0 0 -15px;
+        padding: 0 15px 0 0;
+    }
+    .avatar .QR-code {
+        width: 60px;
+    }
+    .entry .title:before {
+        right: -125%;
+    }
+}
+  
+@media (min-width: 768px) {
+    
+    .entry .title:before {
+        right: -111%;
+    }
+    .projects{
+        padding: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .page {
+        width: 21cm;
+        height: 31.2cm;
+        overflow: hidden;
+    }
+    .skills .skills-list li{
+        width: 17%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills .skills-list li{
+        width: 17%;
+    }
+    .entry .title:before {
+        right: -105%;
+    }
+}
