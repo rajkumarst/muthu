@@ -1,3 +1,9 @@
+
+setTimeout(function() {
+  document.getElementById("myPopup").style.display = "block";
+}, 5000);
+
+
 window.addEventListener('DOMContentLoaded', event => {
 
   // Activate Bootstrap scrollspy on the main nav element
@@ -25,25 +31,33 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-
-// Get the modal
-var modal = document.getElementById("proj1Modal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("proj1Card");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
+var modal;
+function OpenModal(modalName){
+  modal = document.getElementById(modalName);
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+function CloseModal(modalName){
   modal.style.display = "none";
 }
+
+// Get the modal
+//var modal = document.getElementById("proj1Modal");
+// Get the button that opens the modal
+//var btn = document.getElementById("proj1Card");
+
+// Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
